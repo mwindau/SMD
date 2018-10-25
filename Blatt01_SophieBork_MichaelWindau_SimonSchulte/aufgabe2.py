@@ -3,6 +3,8 @@ import matplotlib.pyplot as plt
 import scipy.constants as const
 
 
+def aufg2():
+
 #a) Der Nenner des Wirkungsquerschnitts wird in der Nähe von vielfachen von pi klein.
 # Die Teilung durch eine kleine Zahl führt zur Instabilität.
 #b) Die Formel wird stabilisiert durch die Umformung in:
@@ -83,3 +85,6 @@ plt.legend()
 plt.tight_layout()
 plt.savefig('konditionierung.pdf')
 plt.clf()
+
+if __name__ == '__main__':
+    aufg2()
