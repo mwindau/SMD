@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.11.21)  1 NOV 2018 23:57
+This is LuaTeX, Version 1.0.4 (TeX Live 2017)  (format=lualatex 2017.11.21)  2 NOV 2018 09:00
  restricted system commands enabled.
 **Blatt02.tex
 (./Blatt02.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.225 seconds
+luaotfload | main : initialization completed in 0.247 seconds
 Babel <3.15> and hyphenation patterns for 1 language(s) loaded.
 (/home/simon/.local/texlive/2016/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2017/09/07 v3.24 KOMA-Script document class (article)
@@ -2440,13 +2440,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 409.
 Language ngerman already loaded; id is 8)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 409.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 409.
+Package rerunfilecheck Info: File `Blatt02.aux' has not changed.
+(rerunfilecheck)             Checksum: 18C69D622573593E53DB5CB6EFF20B26;6453.
 
-
-Package rerunfilecheck Warning: File `Blatt02.aux' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `Blatt02.aux':
-(rerunfilecheck)             Before: EB4EB96AEF84810664A2CC514FABD563;6000
-(rerunfilecheck)             After:  18C69D622573593E53DB5CB6EFF20B26;6453.
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -2463,7 +2459,7 @@ Here is how much of LuaTeX's memory you used:
 ibute_list, 1 write nodes
    avail lists: 2:481,3:128,4:23,5:182,6:1019,7:429,8:68,9:286,10:9,11:114
  43604 multiletter control sequences out of 65536+600000
- 106 fonts using 37039583 bytes
+ 106 fonts using 37039279 bytes
  59i,11n,104p,8817b,882s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm-math/latinm
 odern-math.otf></home/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public
@@ -2474,7 +2470,7 @@ t/fonts/opentype/public/lm-math/latinmodern-math.otf></home/simon/.local/texlive
 cal/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></hom
 e/simon/.local/texlive/2016/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.ot
 f>
-Output written on Blatt02.pdf (15 pages, 1265866 bytes).
+Output written on Blatt02.pdf (15 pages, 1265876 bytes).
 
 PDF statistics: 736 PDF objects out of 1000 (max. 8388607)
  307 compressed objects within 4 object streams
