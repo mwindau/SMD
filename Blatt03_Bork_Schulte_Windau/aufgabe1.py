@@ -47,6 +47,12 @@ x, y = rueckweisungsverfahren(20,max_y,10**5)
 
 xtest = np.linspace(0,20,10000)
 
-plt.plot(x,y)
+plt.plot(x,y,'g.')
 #plt.plot(xtest, verteilung(xtest))
-plt.show()
+plt.savefig('planck.pdf')
+plt.clf()
+
+x,y = rueckweisungsverfahren(20,max_y,10**3) # soll nur zeigen, dass diesmal wirklich
+                                             # einzelne Punkte geplottet werden (ist erst bei weniger Werten sichtbar)
+plt.plot(x,y,'b.')
+plt.savefig('unwichtigesbeispiel.pdf')
