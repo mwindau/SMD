@@ -1,10 +1,36 @@
 \input{header}
 
+
+\title{SMD: Blatt 5}
+\author{
+  Sophie Bork
+  \texorpdfstring{
+    \\
+    \href{mailto:sophie.bork@udo.edu}{sophie.bork@udo.edu}
+  }{}
+  \texorpdfstring{\and}{, }
+  Simon Schulte
+  \texorpdfstring{
+    \\
+    \href{mailto:simon.schulte@udo.edu}{simon.schulte@udo.edu}
+  }{}
+  \texorpdfstring{\and}{, }
+  Michael Windau
+  \texorpdfstring{
+    \\
+    \href{mailto:michael.windau@udo.edu}{michael.windau@udo.edu}
+  }{}
+}
+\publishers{TU Dortmund – Fakultät Physik}
+
 \begin{document}
+  \maketitle
+
 
   \section{Aufgabe 13}
     \subsection{Aufgabe 13a}
 
+    Zunächst wird die Transformationsmethode auf den Neutrinofluss angewendet:
     \begin{align*}
       E &\coloneq \frac{E}{\symup{TeV}}\\
       \phi &= \phi_0\cdot(E)^{-\gamma}\\
@@ -22,7 +48,59 @@
       &=1-E^{-1,7}=u\\
       \implies &E^{-1,7}=1-u \iff E=(1-u)^{-\frac1{1,7}}
     \end{align*}
+    Anschließend werden aus den gleichverteilten Zufallszahlen $u$ $10^5$ Signalereignisse
+    simuliert. Diese werden unter dem key "Energy" in das DataFrame "data" gespeichert.
 
+    \subsection{Aufgabe 13b}
+    Aus der Wahrscheinlichkeit für eine Detektion wird die Detektorakzeptanz simuliert.
+    Für die Signale aus a) wird die Akzeptanz berücksichtigt. Ein Vergleich ist im Plot \ref{fig:plothist}
+    zu sehen.
+    \begin{figure}[H]
+      \centering
+      \includegraphics[height=10cm]{plothist.pdf}
+      \caption{Histogramm für die Signale mit und ohne berücksichtigter Akzeptanz.}
+      \label{fig:plothist}
+    \end{figure}
+
+    \subsection{Aufgabe 13c}
+    Mittels der Polarmethode werden aus zwei gleichverteilten Zufallszahlen zwei normalverteilte simuliert.
+    Diese werden über
+    \begin{align*}
+      x &= \sqrt{1-\rho^2}\cdot\sigma x^{*}\, +\,\rho\sigma y^{*}\,+\,\mu\\
+      y &= \sigma y^{*}\,+\,\mu\\
+    \end{align*}
+    in die gewünschte Normalverteilung tranformiert.
+    Aus dieser Normalverteilung werden die Anzahlen der verschiedenen Hits simuliert.
+    Das Ergebniss wird Anschließend im DataFrame unter dem key "NumberOfHits" gespeichert.
+
+    \subsection{Aufgabe 13d}
+    Mittels zwei Normalverteilungen mit dem angegebenen $\sigma$ und den $\mu_x = 7$ bzw.
+    $\mu_y=3$, wird die Ortsmessung auf dem Flächendetektor simuliert. Aus den Normalverteilungen werden
+    die jeweiligen Orte der Hits gezogen, und unter den keys "x" und "y" im DataFrame gespeichert.
+    Die Orte sind in Abbildung \ref{fig:detektor} dargestellt.
+    \begin{figure}[H]
+      \centering
+      \includegraphics[height=10cm]{detektor.pdf}
+      \caption{Zweidimensionales Histogramm der Ortssimulationen.}
+      \label{fig:detektor}
+    \end{figure}
+
+    \subsection{Aufgabe 13e}
+    Zum Schluss wird der Untergrund simuliert.
+    Die Ergebnisse dieser Untergrundsimulation sind in Abbildung \ref{fig:detektoruntergrund} und
+    \ref{fig:histuntergrund} dargestellt.
+    \begin{figure}[H]
+      \centering
+      \includegraphics[height=10cm]{detektoruntergrund.pdf}
+      \caption{Zweidimensionales Histogramm der Ortssimulationen des Untergrunds.}
+      \label{fig:detektoruntergrund}
+    \end{figure}
+    \begin{figure}[H]
+      \centering
+      \includegraphics[height=10cm]{histuntergrund.pdf}
+      \caption{Histogramm der Untergrundsimulation.}
+      \label{fig:histuntergrund}
+    \end{figure}
 
 
 
@@ -33,7 +111,7 @@
     Scatterplot für die ersten zwei Dimensionen des Datensatzes:
     \begin{figure}[H]
       \centering
-      \includegraphics[height=7cm]{a_scatter.pdf}
+      \includegraphics[height=10cm]{a_scatter.pdf}
       \caption{Scatterplot von $x_1$ und $x_2$.}
       \label{fig:ascatter}
     \end{figure}
